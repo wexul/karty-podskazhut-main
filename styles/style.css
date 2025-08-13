@@ -1,3 +1,11 @@
+:root{
+  --main-font: raleway;
+  --accent-font: 'STIX Two Text';
+  --bg-color: #f3efec;
+  --text-color: #312a4e;
+  --accent-color: #ffab6b;
+}
+
 *,
 *::before,
 *::after {
