@@ -101,3 +101,12 @@ figure {
   inset-block-start: 50%;
   inset-inline-start: -25px;
 }
+
+.content__text-block_type_first-lettered .content__paragraph:first-of-type::first-letter{
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 30px;
+  padding: 0 4px;
+  margin-inline-end:1px;
+  display: inline-block; 
+}
