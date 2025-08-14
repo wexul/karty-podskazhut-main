@@ -1,4 +1,4 @@
-:root{
+:root {
   --main-font: raleway;
   --accent-font: 'STIX Two Text';
   --bg-color: #f3efec;
@@ -32,65 +32,65 @@ figure {
   margin: 0;
 }
 
-.header{
-  padding-block-start:10%;
+.header {
+  padding-block-start: 10%;
 }
 
-.heading{
+.heading {
   font-family: var(--accent-font, serif);
   font-weight: 600;
   line-height: 90%;
   text-align: center;
 }
 
-.content-section{
+.content-section {
   padding: 0 5vi;
 }
 
-.header__title{
+.header__title {
   font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
   margin-block-end: 40px;
 }
 
-.content__title{
+.content__title {
   font-size: 30px;
   margin: 7% 0 2.5%;
 }
 
-.content__text-block{
-  font-size:18px;
+.content__text-block {
+  font-size: 18px;
 }
 
-.content__text-block .content__paragraph:not(:last-of-type){
+.content__text-block .content__paragraph:not(:last-of-type) {
   margin-block-end: 1.5em;
 }
 
-.content__text-block a{
-  color:inherit;
+.content__text-block a {
+  color: inherit;
 }
 
-.content__blockquote{
+.content__blockquote {
   font-style: italic;
   line-height: 200%;
   inline-size: 75%;
   margin: 0 auto 1.5em;
 }
 
-.content__list{
+.content__list {
   list-style: none;
   padding-inline-start: 40px;
 }
 
-.content__list li{
+.content__list li {
   position: relative;
 }
 
-.content__list li:not(:last-of-type){
+.content__list li:not(:last-of-type) {
   margin-block-end: 10px;
 }
 
-.content__list li::before{
-  content: "";
+.content__list li::before {
+  content: '';
   inline-size: 15px;
   block-size: 15px;
   position: absolute;
@@ -102,11 +102,30 @@ figure {
   inset-inline-start: -25px;
 }
 
-.content__text-block_type_first-lettered .content__paragraph:first-of-type::first-letter{
+.content__text-block_type_first-lettered
+  .content__paragraph:first-of-type::first-letter {
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 30px;
   padding: 0 4px;
-  margin-inline-end:1px;
-  display: inline-block; 
+  margin-inline-end: 1px;
+  display: inline-block;
+}
+
+.content__picture {
+  inline-size: 100%;
+}
+
+.content__figure {
+  margin: 7% auto;
+  inline-size: calc(100% + 10vi);
+  position: relative;
+  inset-inline-end: 5vi;
+}
+
+.content__picture-caption{
+  border-block-end: 1px solid currentColor;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
 }
