@@ -43,6 +43,53 @@ figure {
   text-align: center;
 }
 
+.header__menu{
+  display: flex;
+  justify-content: space-between;
+  border-block-end: 1px solid var(--text-color);
+  border-block-start: 1px solid var(--text-color);
+  align-items: center;
+}
+
+
+.header__theme-toggler{
+  margin-block: 20px;
+  display: flex;
+  gap:20px;
+  list-style: none;
+  padding: 0;
+}
+
+.header__theme-button{
+  font-family: inherit;
+  color:currentColor;
+  cursor:pointer;
+  border: none;
+  position: relative;
+  padding: 0;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.header__theme-button:hover{
+  text-decoration: underline;
+}
+
+.header__theme-button_is-active{
+  font-weight: 700;
+}
+
+.header__theme-button_is-active::after{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inline-size: calc(100% + 8px);
+  block-size: 0.5ch;
+  inset-block-end: 0.3ch;
+  inset-inline-start: -4px;
+  background-color: var(--accent-color);
+}
+
 .content-section {
   padding: 0 5vi;
 }
