@@ -51,6 +51,17 @@ figure {
   align-items: center;
 }
 
+button:disabled{
+  pointer-events: none;
+}
+
+a:focus button:focus{
+  outline: none;
+}
+
+a:focus-visible button:focus-visible{
+  outline: 1px solid currentColor;
+}
 
 .header__theme-toggler{
   margin-block: 20px;
